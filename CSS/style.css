@@ -1,0 +1,114 @@
+:root {
+--cyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+--darkBlue: hsl(212, 21%, 14%);
+--grayishBlue: hsl(228, 12%, 48%);
+--para: 14px;
+--montserrat: "Montserrat", sans-serif;
+--frances: "Fraunces", serif;
+}
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--cream);
+    font-family: var(--montserrat);
+}
+
+.container {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.container__image-box {
+    max-height: 573.5px;
+    max-width: 382px;
+}
+
+.image-box__image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container__card {
+    background-color: white;
+    padding: 40px 45px;
+}
+
+.container__card p:first-of-type {
+    color: var(--grayishBlue);
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.container__card h1 {
+    color: var(--darkBlue);
+    font-size: 41px;
+    max-width: 250px;
+    font-family: var(--frances);
+    font-weight: 700;
+    margin: 20px 0 25px;
+}
+
+.container__card p:nth-of-type(2) {
+    color: var(--grayishBlue);
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 45px;
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card__price span {
+    color: var(--cyan);
+    font-family: var(--frances);
+    font-size: 35px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.card__price del {
+    color: var(--grayishBlue);
+    font-size: 16px;
+}
+
+.card__button {
+    width: 100%;
+    background-color: var(--cyan);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card__button:hover {
+    background-color: #1a4031;
+}
+
+.card__button img {
+    margin-right: 10px;
+}
